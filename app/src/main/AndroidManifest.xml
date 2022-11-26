@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ifpizzaapp">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,11 +16,19 @@
         android:theme="@style/Theme.IfPizzaApp"
         tools:targetApi="31">
         <activity
+            android:name=".Maps_Activity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
             android:name=".Registrarse"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Logo"
             android:exported="true"
@@ -36,7 +46,7 @@
         -->
         <activity
             android:name=".Login"
-            android:exported="false"></activity>
+            android:exported="false" />
         <!--
 <activity
             android:name=".Favoritos"
