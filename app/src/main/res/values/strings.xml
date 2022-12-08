@@ -25,4 +25,7 @@
     <string name="Populares">Populares</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Ingrese_Ubicacion">Ingrese su ubicacion</string>
+    <string name="label_from">%sl</string>
+    <string name="no_place_selected">Lugar no seleccionado</string>
 </resources>

@@ -24,22 +24,38 @@
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNombreUsuario" />
 
     <TextView
         android:id="@+id/txvLabelCategorias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/Cat"
         android:textColor="@color/fondo_verde"
         android:textSize="20dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDireccion"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        app:cornerRadius="35dp"
+        app:icon="@drawable/ic_baseline_map_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search" />
 
